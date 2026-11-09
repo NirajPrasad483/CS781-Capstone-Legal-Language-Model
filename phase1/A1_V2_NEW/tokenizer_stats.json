@@ -1,0 +1,41 @@
+{
+  "vocab_size": 32000,
+  "n_merges": 31740,
+  "special_tokens": [
+    "<pad>",
+    "<s>",
+    "</s>",
+    "<unk>"
+  ],
+  "pretokenizer_regex": "'(?:s|t|re|ve|m|ll|d)| ?[^\\W\\d_]+| ?\\d+| ?(?:[^\\s\\w]|_)+|\\s+(?!\\S)|\\s+|.",
+  "max_digits_per_pretoken": null,
+  "normalization": "NFKC, delete Cc/Cf/Cs, collapse whitespace to one space, strip; no lowercasing",
+  "seed": 42,
+  "mix": {
+    "acts": 0.15,
+    "high_courts": 0.3,
+    "supreme_court": 0.3,
+    "tribunals": 0.25
+  },
+  "unique_words": 232870,
+  "total_pretokens": 20816400,
+  "word_count_seconds": 9.3,
+  "total_train_seconds": 27.5,
+  "eval": {
+    "docs": 2000,
+    "tokens": 4832351,
+    "words": 3790435,
+    "tokens_per_word": 1.2749,
+    "chars_per_token": 4.7015,
+    "unk_rate": 0.0,
+    "round_trip_pass_rate": 1.0,
+    "encode_tokens_per_sec": 1406581,
+    "encode_MB_per_sec": 6.613,
+    "per_source_tokens_per_word": {
+      "acts": 1.2558,
+      "high_courts": 1.3485,
+      "supreme_court": 1.2269,
+      "tribunals": 1.4104
+    }
+  }
+}
